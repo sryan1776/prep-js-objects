@@ -70,16 +70,12 @@ completePerson1 = buildPerson(plainPerson, "ray", 1);
 completePerson2 = buildPerson(plainPerson, "shawna", 21);
 
 
-
-//console.log(buildPerson(name));
-//console.log(buildPerson(age));
-
-
 /*
     # Display values of objects that are inside an array
         Declare a new variable named `arrayOfObjects` and set it to be [this array of objects](https://gist.github.com/sgnl/958adf99007329d2e4ff).
 
-        Declare a new function named `printProcessedOrders`and set one parameter called `orders`. Within this function you will return a string that prints the order details to the page in the following format.
+        Declare a new function named `printProcessedOrders`and set one parameter called `orders`. 
+        Within this function you will return a string that prints the order details to the page in the following format.
 
         Example output:
             =====
@@ -98,17 +94,91 @@ completePerson2 = buildPerson(plainPerson, "shawna", 21);
             ...
  */
 
+var arrayOfObjects = [
+  {
+    id: 0,
+    date: "Monday Jan 25 2015 2:01 PM",
+    total: "279.38"
+  },
+  {
+    id: 1,
+    date: "Monday Jan 27 2015 11:31 AM",
+    total: "79.80"
+  },
+  {
+    id: 2,
+    date: "Monday Feb 1 2015 7:56 AM",
+    total: "15.62"
+  },
+  {
+    id: 3,
+    date: "Monday Feb 1 2015 9:43 AM",
+    total: "19.83"
+  },
+  {
+    id: 4,
+    date: "Monday Feb 1 2015 11:08 PM",
+    total: "56.69"
+  },
+  {
+    id: 5,
+    date: "Monday Feb 13 2015 10:22 AM",
+    total: "137.92"
+  },
+  {
+    id: 6,
+    date: "Monday Feb 14 2015 6:54 PM",
+    total: "938.65"
+  },
+  {
+    id: 7,
+    date: "Monday Feb 14 2015 7:17 PM",
+    total: "43.77"
+  },
+  {
+    id: 8,
+    date: "Monday Feb 14 2015 7:18 PM",
+    total: "28.54"
+  },
+  {
+    id: 9,
+    date: "Monday Feb 14 2015 7:18 PM",
+    total: "194.33"
+  }
+];
+
+function printProcessedOrders(orders){
+    return "id"+ "" + "purchase" + "" + "purchase" + "";
+}
 
 /*
     # Addition with an object
-        Declare a new variable named sumObj and set it to be a new object with the properties `a`, `b`, and `result`. Properties 'a' and 'b' will be set to a number and result will be 'undefined.'
+        Declare a new variable named sumObj and set it to be a new object with the properties `a`, `b`, and `result`. 
+        Properties 'a' and 'b' will be set to a number and result will be 'undefined.'
 
-        Declare a new function named objectAddition. Declare the first parameter, which will be an object. Within this function, you will access the values stored `a` and `b` of the object being passed in. Add the these values and store the sum to this object's `result` property. This function will return the object.
+        Declare a new function named objectAddition. Declare the first parameter, which will be an object. 
+        Within this function, you will access the values stored `a` and `b` of the object being passed in. 
+        Add the these values and store the sum to this object's `result` property. This function will return the object.
 
         Invoke your function and pass in your object, store the result to a variable named sumObjResult and use `console.log` to inspect your results.
 
         Go ahead and create some more objects and pass them to this function. Have fun with it.
 */
+ var sumObj = {
+    a : 6, 
+    b : 7,
+    result : undefined
+ };
+
+ function objectAddition(object){
+    object.result = object.a + object.b;
+    return object;
+ };
+
+objectAddition(sumObj);
+var sumObjResult = objectAddition(sumObj);
+
+//console.log(sumObjResult(5, 7));
 
 
 /*
