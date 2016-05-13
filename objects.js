@@ -7,6 +7,13 @@
             - Add a property named `contents` and set it to be an empty array.
  */
 
+var plainBox = {};
+    
+plainBox.color= 'blue';
+plainBox.size= 15;
+plainBox.contents=[];
+
+
 
 /*
     # An object with properties declared line by line
@@ -22,6 +29,14 @@
             - add a key named `driver` and set it to be `null`.
             - add a key named `passengers` and set it to be an empty array.
  */
+var stockCar = {
+    model: 'Ford',
+    year: 2010,
+    automaticTransmission: true,
+    driver: null,
+    passengers: []
+};
+
 
 
 /*
@@ -29,14 +44,35 @@
 
         Declare a variable named `plainPerson`. Set its value to be an empty object with no properties.
 
-        Next, declare a function named `buildPerson` and then define three parameters. The first parameter will be named `person` and the second will be `nameString` and the third will be `age`. Within this function you will modify the `person` object by:
+        Next, declare a function named `buildPerson` and then define three parameters. The first parameter will be named `person` 
+        and the second will be `nameString` and the third will be `age`. Within this function you will modify the `person` object by:
             - adding a property called `name` and set its value to be the second parameter.
             - adding a property called `age` and set its value to be the third parameter.
 
         The function will return the first parameter.
 
-        Finally, invoke your new function while passing in the `plainPerson` object and additional agrument values, then store the return value in a variable named `completePerson`. Use `console.log` three times to print the entire object, just the value at `name`, and just the value at `age`.
+        Finally, invoke your new function while passing in the `plainPerson` object and additional agrument values, 
+        then store the return value in a variable named `completePerson`. Use `console.log` three times to print the entire object, 
+        just the value at `name`, and just the value at `age`.
  */
+var plainPerson = {};
+
+function buildPerson(person, nameString, age) {
+    person.name = nameString;
+    person.age = age;
+
+    return person;
+
+ };  
+
+completePerson = buildPerson(plainPerson, "Jim", 33);
+completePerson1 = buildPerson(plainPerson, "ray", 1);
+completePerson2 = buildPerson(plainPerson, "shawna", 21);
+
+
+
+//console.log(buildPerson(name));
+//console.log(buildPerson(age));
 
 
 /*
